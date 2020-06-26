@@ -1,35 +1,57 @@
-# string_to_hex
+string_to_hex       ![pub package](https://img.shields.io/badge/pub-0.0.1%2B0-blue)
+====
 
-  /// A powerful conversion of [String] or/and Hash to HEX.
-  /// It returns a unique HEX, or a unique int of [Color()] per provided String/hash.
-  /// It's provided two methods [toHexString] and [toColor], which return a Hex-String, or respectively.
+A powerful conversion of [String] or/and Hash to HEX.
+It returns a unique HEX, or a unique int of [Color()] per provided String/hash.
+It's provided two methods [toHexString] and [toColor], which return a Hex-String, or integer of Color() respectively.
 
-  /// This class get RGB Color
-  /// by doing bits shifts from color [0xFF0000], [0x00FF00], [0x0000FF]
 
-  /// Return a [String] of 'bit hex':
-  /// Its return is proper to your custom manipulating (as you lik better 🧑‍💻).
 
-  /// Return a [int] of 'bit hex':
-  /// Its return is proper to use as hex [color int] in a Color()
-  /// For example: ``` ... color: Color(StringToHex().toColor('a nice String')) ... ```
-  /// then it'll generate and fill a hex-color int in it.
+## Default:
 
-  /// return a hex-color.
-  /// i.e: 0xFF353535
-  /// or: 8787451701
+This package return hex-string or hex-int-color, check bellow:
 
-  /// Returns a String HEX with prefix '0xFF'
-  /// i.e: '0xFF343434'
+#### toColor()
 
-  /// you can use as: [ 
-  ///   var myNiceColor = StringToHex().toColor('your nice string');
-  ///   ...
-  ///   color: Color(myNiceColor);
-  ///   ...
-  /// ]
-  /// or: [ 
-  ///   ...
-  ///   color: Color(StringToHex().toColor('your nice string'));
-  ///   ...
-  /// ]
+Return a [int] of 'bit hex':
+Its return is proper to use as hex [color int] in a Color()
+For example: ``` ... color: Color(StringToHex().toColor('a nice String')) ... ``` 
+then it'll generate and fill a hex-color int in it.
+            
+    return a hex-color.
+    i.e: 0xFF353535
+    or: 8787451701
+    
+##### how to:
+you can use as: 
+```
+  var myNiceColor = StringToHex().toColor('your nice string');
+    ...
+    color: Color(myNiceColor);
+    ...
+```
+or:  
+```
+...
+color: Color(StringToHex().toColor('your nice string'));
+...
+```
+
+#### toHexString()
+
+        
+Return a [String] of 'bit hex':
+  Its return is proper to your custom manipulating (as you lik better 🧑‍💻).
+
+    Returns a String HEX with prefix '0xFF'
+    i.e: '0xFF343434'
+      
+
+## Example:
+[This example app shows all implementations](https://github.com/allansrc/string_to_hex/tree/master/example)
+
+|App shot|
+|--------|
+|<img src="" width="250"> |
+
+Have a Nice Code!
