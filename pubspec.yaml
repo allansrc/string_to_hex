@@ -1,7 +1,7 @@
 name: string_to_hex
 description: A powerful conversion of String or/and Hash to HEX. It returns a unique HEX, or a unique Color() per provided String/hash.
 version: 0.0.1
-author: Allan Ramos
+# author: Allan Ramos
 homepage: https://github.com/allansrc/string_to_hex
 
 environment:
