@@ -1,4 +1,4 @@
-string_to_hex       ![pub package](https://img.shields.io/badge/pub-0.0.1%2B0-blue)
+string_to_hex       [![pub package](https://img.shields.io/badge/pub-0.1.0-blue)](https://pub.dev/packages/string_to_hex)
 ====
 
 A powerful conversion of [String] or/and Hash to HEX.
