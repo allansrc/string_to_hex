@@ -53,6 +53,6 @@ Return a [String] of 'bit hex':
 |App shot|
 |--------|
 |<img src="https://github.com/allansrc/string_to_hex/blob/master/image/ezgif-4-ad8ddb7cb25a.gif" width="250"> |
-[App Shots](https://github.com/allansrc/string_to_hex/blob/master/image/ezgif-4-ad8ddb7cb25a.gif)
+![App Shots](https://github.com/allansrc/string_to_hex/blob/master/image/ezgif-4-ad8ddb7cb25a.gif)
 
 Have a Nice Code!
