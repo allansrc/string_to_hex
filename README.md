@@ -1,4 +1,4 @@
-string_to_hex       [![pub package](https://img.shields.io/badge/pub-0.1.1-blue)](https://pub.dev/packages/string_to_hex)
+string_to_hex       [![pub package](https://img.shields.io/badge/pub-0.2.1+30-blue)](https://pub.dev/packages/string_to_hex)
 ====
 
 A powerful conversion of [String] or/and Hash to HEX.
@@ -15,7 +15,7 @@ This package return hex-string or hex-int-color, check bellow:
 
 Return a [int] of 'bit hex':
 Its return is proper to use as hex [color int] in a Color()
-For example: ``` ... color: Color(StringToHex().toColor('a nice String')) ... ``` 
+For example: ``` ... color: Color(StringToHex.toColor('a nice String')) ... ``` 
 then it'll generate and fill a hex-color int in it.
             
     return a hex-color.
@@ -25,7 +25,7 @@ then it'll generate and fill a hex-color int in it.
 ##### how to:
 you can use as: 
 ```
-  var myNiceColor = StringToHex().toColor('your nice string');
+  var myNiceColor = StringToHex.toColor('your nice string');
     ...
     color: Color(myNiceColor);
     ...
@@ -33,7 +33,7 @@ you can use as:
 or:  
 ```
 ...
-color: Color(StringToHex().toColor('your nice string'));
+color: Color(StringToHex.toColor('your nice string'));
 ...
 ```
 

@@ -19,3 +19,6 @@
 ## [0.2.1] - 2020-07-30.
 
 * fix range error.
+## [0.2.1+30] - 2020-07-30.
+
+* Method call as ```StringToHex.toColor()``` replacing previewer call ```StringToHex().toColor()``` 
