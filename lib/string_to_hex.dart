@@ -7,11 +7,11 @@ class StringToHex {
   /// This class get RGB Color
   /// by doing bits shifts from color [0xFF0000], [0x00FF00], [0x0000FF]
 
-  int _getInt(str) {
+  static int _getInt(str) {
     var hash = 5381;
 
     for (var i = 0; i < str.length; i++) {
-      hash = ((hash << 5) + hash) + str.codeUnitAt(i);
+      hash = ((hash << 4) + hash) + str.codeUnitAt(i);
     }
 
     return hash;
@@ -22,7 +22,7 @@ class StringToHex {
 
   /// Returns a String HEX with prefix '0xFF'
   /// i.e: '0xFF343434'
-  String toHexString(str) {
+  static String toHexString(str) {
     try {
       var hash = _getInt(str);
       var r = (hash & 0xFF0000) >> 16;
@@ -33,10 +33,7 @@ class StringToHex {
       var gg = g.toString();
       var bb = b.toString();
 
-      return '0xFF' +
-          rr.substring(rr.length - 2) +
-          gg.substring(gg.length - 2) +
-          bb.substring(bb.length - 2);
+      return '0xFF' + rr.substring(rr.length - 2) + gg.substring(gg.length - 2) + bb.substring(bb.length - 2);
     } catch (err) {
       print('Error: String Must be greater than range 2\n'
           '=========== hash string to hex ===========\n'
@@ -53,7 +50,7 @@ class StringToHex {
   /// return a hex-color.
   /// i.e: 0xFF353535
   /// or: 8787451701
-  int toColor(str) {
+  static int toColor(str) {
     try {
       var hash = _getInt(str);
       var r = (hash & 0xFF0000) >> 16;
@@ -64,10 +61,8 @@ class StringToHex {
       var gg = g.toString();
       var bb = b.toString();
 
-      return int.parse('0xFF' +
-          rr.substring(rr.length - 2) +
-          gg.substring(gg.length - 2) +
-          bb.substring(bb.length - 2));
+      return int.parse(
+          '0xFF' + rr.substring(rr.length - 2) + gg.substring(gg.length - 2) + bb.substring(bb.length - 2));
     } catch (err) {
       print('Error: String Must be greater than range 2\n'
           '=========== hash string to hex ===========\n'

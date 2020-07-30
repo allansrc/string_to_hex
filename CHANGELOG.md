@@ -13,3 +13,9 @@
 ## [0.1.1+2] - 2020-06-27.
 
 * fix image docs.
+## [0.2.0] - 2020-07-05.
+
+* Methods improv & docs.
+## [0.2.1] - 2020-07-30.
+
+* fix range error.

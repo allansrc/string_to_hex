@@ -124,10 +124,10 @@ packages:
   string_to_hex:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.0.1"
+      name: string_to_hex
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1+2"
   term_glyph:
     dependency: transitive
     description:

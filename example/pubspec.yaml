@@ -11,8 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  string_to_hex:
-    path: ../
+  string_to_hex: ^0.1.1+2
 
   cupertino_icons: ^0.1.3
 
