@@ -6,14 +6,13 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  string_to_hex: ^0.1.1+2
-
-  cupertino_icons: ^0.1.3
+  string_to_hex:
+    path: ../
 
 dev_dependencies:
   flutter_test:
