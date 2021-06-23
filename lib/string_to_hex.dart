@@ -11,7 +11,7 @@ class StringToHex {
     var hash = 5381;
 
     for (var i = 0; i < str.length; i++) {
-      hash = ((hash << 4) + hash) + str.codeUnitAt(i);
+      hash = ((hash << 4) + hash) + str.codeUnitAt(i) as int;
     }
 
     return hash;
@@ -33,7 +33,10 @@ class StringToHex {
       var gg = g.toString();
       var bb = b.toString();
 
-      return '0xFF' + rr.substring(rr.length - 2) + gg.substring(gg.length - 2) + bb.substring(bb.length - 2);
+      return '0xFF' +
+          rr.substring(rr.length - 2) +
+          gg.substring(gg.length - 2) +
+          bb.substring(bb.length - 2);
     } catch (err) {
       print('Error: String Must be greater than range 2\n'
           '=========== hash string to hex ===========\n'
@@ -61,8 +64,10 @@ class StringToHex {
       var gg = g.toString();
       var bb = b.toString();
 
-      return int.parse(
-          '0xFF' + rr.substring(rr.length - 2) + gg.substring(gg.length - 2) + bb.substring(bb.length - 2));
+      return int.parse('0xFF' +
+          rr.substring(rr.length - 2) +
+          gg.substring(gg.length - 2) +
+          bb.substring(bb.length - 2));
     } catch (err) {
       print('Error: String Must be greater than range 2\n'
           '=========== hash string to hex ===========\n'
