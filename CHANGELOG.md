@@ -1,24 +1,35 @@
 ## [0.0.1] - 2020-06-25.
 
-* Initial release.
+- Initial release.
+
 ## [0.1.0] - 2020-06-27.
 
-* Release upgrade.
+- Release upgrade.
+
 ## [0.1.1] - 2020-06-27.
 
-* Update docs.
+- Update docs.
+
 ## [0.1.1+1] - 2020-06-27.
 
-* fix image docs.
+- fix image docs.
+
 ## [0.1.1+2] - 2020-06-27.
 
-* fix image docs.
+- fix image docs.
+
 ## [0.2.0] - 2020-07-05.
 
-* Methods improv & docs.
+- Methods improv & docs.
+
 ## [0.2.1] - 2020-07-30.
 
-* fix range error.
+- fix range error.
+
 ## [0.2.1+30] - 2020-07-30.
 
-* Method call as ```StringToHex.toColor()``` replacing previewer call ```StringToHex().toColor()``` 
+- Method call as `StringToHex.toColor()` replacing previewer call `StringToHex().toColor()`
+
+## [0.2.2] - 2021-06-23.
+
+- Migrate to null-safety
