@@ -29,9 +29,9 @@ class StringToHex {
       var g = (hash & 0x00FF00) >> 8;
       var b = hash & 0x0000FF;
 
-      var rr = r.toString();
-      var gg = g.toString();
-      var bb = b.toString();
+      var rr = '0' + r.toString();
+      var gg = '0' + g.toString();
+      var bb = '0' + b.toString();
 
       return '0xFF' +
           rr.substring(rr.length - 2) +
@@ -54,25 +54,6 @@ class StringToHex {
   /// i.e: 0xFF353535
   /// or: 8787451701
   static int toColor(str) {
-    try {
-      var hash = _getInt(str);
-      var r = (hash & 0xFF0000) >> 16;
-      var g = (hash & 0x00FF00) >> 8;
-      var b = hash & 0x0000FF;
-
-      var rr = r.toString();
-      var gg = g.toString();
-      var bb = b.toString();
-
-      return int.parse('0xFF' +
-          rr.substring(rr.length - 2) +
-          gg.substring(gg.length - 2) +
-          bb.substring(bb.length - 2));
-    } catch (err) {
-      print('Error: String Must be greater than range 2\n'
-          '=========== hash string to hex ===========\n'
-          '            string length = ${str.length}');
-      rethrow;
-    }
+      return int.parse(toHexString(str));
   }
 }
